@@ -1,0 +1,9 @@
+{
+    "author": "W01f",
+    "challengeName": "secret-signals",
+    "challengeDescription": "My colleague sent me this wierd looking picture. Maybe you can help me find the message he intended to share with me. Make sure to wrap your findings in winterhack{}",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "forensics",
+    "flag": "winterhack{S1GN4L5FTW}"
+}
