@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Status</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="message-container">
+        <h1 id="status-message">Login Status</h1>
+        <p id="message">{{message}}</p>
+        <a href="/" class="button">Back to Home</a>
+    </div>
+</body>
+</html>

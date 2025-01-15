@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ bug.title }}</h2>
+<p>{{ bug.description }}</p>
+<h3>Comments:</h3>
+<ul>
+    {% for comment in bug.comments %}
+    <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+<h3>Add a Comment:</h3>
+<form method="post">
+    <textarea name="comment" required></textarea><br>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

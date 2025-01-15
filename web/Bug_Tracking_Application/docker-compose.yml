@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  challenge:
+    build:
+      context: ./app
+    restart: always
+    environment:
+      - FLAG=winterhack{FAKE_FLAG}
+
+  proxy:
+    build: 
+      context: ./haproxy
+    ports:
+      - 9090:80
