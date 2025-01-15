@@ -1,0 +1,9 @@
+{
+    "author": "v1p3r",
+    "challengeName": "InnSecure",
+    "challengeDescription": "A hotel listing search—can you inject your way through the query and reveal the hidden flag?",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "Web",
+    "flag": "winterhack{innsecure_259816a1549ded25000}"
+}
