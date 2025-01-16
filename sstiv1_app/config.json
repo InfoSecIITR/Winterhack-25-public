@@ -1,9 +1,0 @@
-{
-    "author":"per0xyd3",
-    "challengeName":"Obtuse Chatbot",
-    "challengeDescription":"I am irritated by this obtuse chatbot. Can you face it?",
-    "minPoints": 100,
-    "maxPoints": 500,
-    "category":"Web",
-    "flag":"winterhack{17_w45_pr377y_s1mpl3_5571!}"
-}

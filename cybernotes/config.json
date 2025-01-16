@@ -1,9 +1,0 @@
-{
-    "author":"per0xyd3",
-    "challengeName":"CyberNotes",
-    "challengeDescription":"A typical admin bot challenge :) Flag is in the cookie of admin ;)",
-    "minPoints": 100,
-    "maxPoints": 500,
-    "category":"Web",
-    "flag":"winterhack{w45_th15_y0ur_f1r5t_4dm1n_b07_ch4ll}"
-}
