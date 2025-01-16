@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register  </title>
+    <style>
+        body {
+            background: #121212;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .form-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 450px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header {
+            font-size: 2rem;
+            color: #00ff00;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.6), 0 0 30px rgba(0, 255, 255, 0.3);
+        }
+
+        .form-input {
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 12px 18px;
+            background: transparent;
+            border: 2px solid #00ff00;
+            color: #00ff00;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            box-sizing: border-box;
+            outline: none;
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+        .form-input:focus {
+            border-color: #ff00ff;
+            box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+        }
+
+        .submit-btn {
+            padding: 12px 20px;
+            background-color: #00ff00;
+            color: #000;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #ff00ff;
+            box-shadow: 0 0 30px rgba(255, 0, 255, 0.6);
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+            }
+            100% {
+                text-shadow: 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+            }
+        }
+
+        label {
+            font-size: 1.1rem;
+            color: #00ff00;
+            display: block;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        }
+
+
+        @keyframes movingBackground {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                width: 85%;
+            }
+            .header {
+                font-size: 1.8rem;
+            }
+            .form-input, .submit-btn {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="background-animation"></div>
+
+    <div class="form-container">
+        <div class="header glowing-text">Register Now </div>
+
+        <form action="/register" method="post">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="form-input" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-input" required>
+            </div>
+            <button type="submit" class="submit-btn">Create Account</button>
+        <script>
+            document.querySelector('form').addEventListener('submit', function() {
+                localStorage.clear();
+            });
+        </script>
+        </form>
+    </div>
+
+</body>
+</html>
