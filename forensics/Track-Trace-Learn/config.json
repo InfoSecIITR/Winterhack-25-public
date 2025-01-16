@@ -1,0 +1,9 @@
+{
+    "author": "W01f",
+    "challengeName": "Track-Trace-Learn",
+    "challengeDescription": "My friend charlie sent me a message hidden in this packet capture but I have no time to decode it. Hopefully you can help me?",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "forensics",
+    "flag": "winterhack{SRK_0nc3_s41d_t1m1ng_15_everyth1n6}"
+}

@@ -1,0 +1,9 @@
+{
+    "author": "v1p3r",
+    "challengeName": "Ping-Pong",
+    "challengeDescription": "Here is a simple ping app, nothing can go wrong..right??",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "Web",
+    "flag": "flag{h3ck3r_h4i_bh4i_h4ck3r!!!}"
+}

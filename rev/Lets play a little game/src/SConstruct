@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+import os
+import sys
+
+env = SConscript("godot-cpp/SConstruct")
+
+# For reference:
+# - CCFLAGS are compilation flags shared between C and C++
+# - CFLAGS are for C-specific compilation flags
+# - CXXFLAGS are for C++-specific compilation flags
+# - CPPFLAGS are for pre-processor flags
+# - CPPDEFINES are for pre-processor defines
+# - LINKFLAGS are for linking flags
+# tweak this if you want to use different folders, or more folders, to store your source code in.
+env.Append(CPPPATH=["src/"])
+source1 = Glob("src/level/*.cpp")
+source2 = Glob("src/crack/*.cpp")   
+env.Append(CCFLAGS=["/Z7"])
+env.Append(CCFLAGS=["/Od"])
+# env.Append(LINKFLAGS=["/DEBUG"])
+env.Append(LIBS=["User32"])
+
+library1 = env.SharedLibrary(
+    "game/bin/level".format(env["suffix"], env["SHLIBSUFFIX"]),
+    source=source1,
+)
+library2 = env.SharedLibrary(
+    "game/bin/crack".format(env["suffix"], env["SHLIBSUFFIX"]),
+    source=source2,
+)
+
+Default([library1, library2])

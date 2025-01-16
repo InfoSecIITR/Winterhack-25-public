@@ -1,0 +1,9 @@
+{
+    "author": "W01f",
+    "challengeName": "baby-steg",
+    "challengeDescription": "Just another simple steganography challenge:)",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "forensics",
+    "flag": "winterhack{4r1s3_y0ur_st3g0_m0n4rch}"
+}

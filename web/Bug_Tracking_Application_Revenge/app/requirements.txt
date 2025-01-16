@@ -1,0 +1,4 @@
+Flask
+gunicorn==20.0.4
+gevent
+requests

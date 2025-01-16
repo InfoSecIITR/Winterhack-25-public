@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://cuv4vme4rwno0"]
+
+[ext_resource type="PackedScene" uid="uid://cruok7rdv8swy" path="res://scenes/level_2.tscn" id="2_b8qsh"]
+[ext_resource type="PackedScene" uid="uid://dgm4qhyhmicoq" path="res://scenes/level_3.tscn" id="3_cu3r5"]
+[ext_resource type="PackedScene" uid="uid://beks1iniwf2mw" path="res://scenes/level_1.tscn" id="4_6hio1"]
+[ext_resource type="PackedScene" uid="uid://s0thq83hniex" path="res://scenes/level_4.tscn" id="4_euy4d"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Level1" parent="." instance=ExtResource("4_6hio1")]
+
+[node name="Level2" parent="." instance=ExtResource("2_b8qsh")]
+
+[node name="Level3" parent="." instance=ExtResource("3_cu3r5")]
+
+[node name="Level4" parent="." instance=ExtResource("4_euy4d")]

@@ -1,0 +1,9 @@
+{
+    "author": "W01f",
+    "challengeName": "LSB-or-not",
+    "challengeDescription": "Looks like LSB steganography is too simple isn't it so i thought of taking it one level up. Can you still find the flag?",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "forensics",
+    "flag": "winterhack{h4v1n6_fun_w17h_LSB??}"
+}

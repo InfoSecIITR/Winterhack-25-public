@@ -1,0 +1,15 @@
+services:
+  web:
+    build:
+      context: ./revealed
+    restart: always
+    environment:
+      - PORT=8080
+      - ADMIN_PASSWORD=ADMIN_PASS
+      - LOCAL_SERVICE=local:5000
+    ports:
+      - "9090:8080"
+  local:
+    build:
+      context: ./local
+    restart: always

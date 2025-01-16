@@ -1,0 +1,9 @@
+{
+    "author": "v1p3r",
+    "challengeName": "Pixhell",
+    "challengeDescription": "A seemingly innocent image upload feature—can you upload more than just an image and reveal the hidden flag?",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "Web",
+    "flag": "flag{0h_n0_y0u_g0t_RC3_5h1t!!}"
+}

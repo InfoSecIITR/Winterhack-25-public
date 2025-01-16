@@ -1,0 +1,29 @@
+<!-- Base HTML layout for the CTF Bug Tracking Application -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Tracking Application</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bug Tracking Application</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/report">Report a Bug</a>
+            <a href="/bugs">View Bugs</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bug Tracker. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

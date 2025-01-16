@@ -1,0 +1,9 @@
+{
+    "author": "v1p3r",
+    "challengeName": "Warm-up",
+    "challengeDescription": "Welcome to WinterHack5CTF 2025!",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "Web",
+    "flag": "winterhack{h3y_th3r3_w3lc0m3_t0_th3_Wint3rH4ck5CTF_2025}"
+}

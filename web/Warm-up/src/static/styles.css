@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #232323;
+    padding: 40px;
+    text-align: center;
+    color: #ffdd00; /* Bright yellow */
+    font-size: 2em;
+    border-bottom: 3px solid #ff6f00;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #f9a825;
+}
+
+h2 {
+    font-size: 1.0em;
+    color: #ff7043;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+.hint {
+    color: #00e676;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hint:hover {
+    color: #00c853;
+}
+
+footer {
+    background-color: #232323;
+    color: #bdbdbd;
+    padding: 15px;
+    text-align: center;
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+}
+
+button {
+    background-color: #ff6f00;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+
+
+/* Flag Part 3: t0_th3_Wint3rH4ck5 */

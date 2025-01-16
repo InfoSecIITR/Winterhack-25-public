@@ -1,0 +1,9 @@
+{
+    "author": "W01f",
+    "challengeName": "cryptanalyser",
+    "challengeDescription": "If you think you know the cryptic world, try to decode these pieces of information and you will be rewarded with you flag. Note: flag format is winterhack{some_leet_string_without_spaces}",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "forensics",
+    "flag": "winterhack{gr34t_j0b_l177l3_c1ph3r_4nalyz3r_f0r_ur_1st_w1n}"
+}

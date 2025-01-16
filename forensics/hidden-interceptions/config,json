@@ -1,0 +1,9 @@
+{
+    "author": "W01f",
+    "challengeName": "hidden-interception",
+    "challengeDescription": "Some messages are best to remain hidden, especially when they are codes to be decoded. Try your best to extract the message. Note: flag format is - winterhack{all_lowercase_with_numbers}",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "forensics",
+    "flag": "winterhack{4nd_y0u_th0ugh7_1t_w4s_b1n4ry}"
+}

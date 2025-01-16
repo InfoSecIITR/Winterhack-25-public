@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <title>Signup</title>
+  </head>
+  <body>
+    <header class="container">
+        <nav>
+            <ul>
+                <h1>Calculator Service</h1>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="container margin" style="width: 25rem;">
+            <h1>Signup</h1>
+            <form method="post" action="/signup">
+            <fieldset>
+                <input
+                    name="username"
+                    placeholder="Username"
+                    autocomplete="given-name"
+                />
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    autocomplete="given-name"
+                />
+            </fieldset>
+
+
+            <input
+                type="submit"
+                value="Signup"
+            />
+            </form>
+            <p>Already have an account? <a href="/login">Login</a></p>
+    
+            </div>
+    </main>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "author": "W01f",
+    "challengeName": "boggling-bytes",
+    "challengeDescription": "Someone messed up with my precious file. Hopefully you can fix the issue for me.",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category": "forensics",
+    "flag": "winterhack{byt3s_5ur3_4r3_fun}"
+}
