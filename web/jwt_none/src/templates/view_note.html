@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Note  </title>
+    <style>
+        
+        body {
+            background: #121212;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            box-sizing: border-box; /* Ensures padding is included in width/height calculations */
+        }
+
+        
+        .form-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            text-align: center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box; /* Ensure container considers padding */
+        }
+
+        
+        .header {
+            font-size: 2.5rem;
+            color: #00ff00;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.4);
+        }
+
+        
+        label {
+            color: #00ff00;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 10px;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.8);
+            text-align: left;
+            width: 100%;
+        }
+
+        
+        .note-detail {
+            color: #00ff00;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-align: left;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        
+        .back-btn {
+            background-color: #ff00ff;
+            color: #000;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #00ff00;
+            box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+        }
+
+        
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+            }
+            100% {
+                text-shadow: 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+            }
+        }
+
+        @keyframes movingBackground {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+       
+        @media (max-width: 480px) {
+            .form-container {
+                width: 85%;
+            }
+            .header {
+                font-size: 1.8rem;
+            }
+            .note-detail, .back-btn {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-animation"></div>
+
+    <div class="form-container">
+        <div class="header glowing-text">View Note </div>
+
+        <div id="note-details">
+        </div>
+
+        <a href="/note" class="back-btn">Back to Notes</a>
+    </div>
+
+    <script>
+        const noteId = window.location.pathname.split('/').pop();
+        const notes = JSON.parse(localStorage.getItem('notes')) || [];
+
+        function displayNote(noteId) {
+            const note = notes.find(note => note.note_id === noteId);
+
+            if (note) {
+                document.getElementById('note-details').innerHTML = `
+                    <div class="note-detail"><strong>Note ID:</strong> ${note.note_id}</div>
+                    <div class="note-detail"><strong>Title:</strong> ${note.title}</div>
+                    <div class="note-detail"><strong>Content:</strong> ${note.content}</div>
+                `;
+            } else {
+                document.getElementById('note-details').innerHTML = "<p class='note-detail'>Note not found!</p>";
+            }
+        }
+
+        displayNote(noteId);
+    </script>
+
+</body>
+</html>

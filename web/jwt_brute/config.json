@@ -1,0 +1,9 @@
+{
+    "author":"per0xyd3",
+    "challengeName":"JWTical",
+    "challengeDescription":"Can you see through the JWT and crack it? ;)",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category":"Web",
+    "flag":"winterhack{jw7_brut3_1s_3asy_w17h_h45hc4t}"
+}

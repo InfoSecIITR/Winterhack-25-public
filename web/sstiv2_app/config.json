@@ -1,0 +1,9 @@
+{
+    "author":"per0xyd3",
+    "challengeName":"Obtuse Chatbot Revenge 👿",
+    "challengeDescription":"The chatbot is back and it's more obtuse than ever! Can you get the flag from it?",
+    "minPoints": 100,
+    "maxPoints": 500,
+    "category":"Web",
+    "flag":"winterhack{y0u_d3s3rv3_th1s_55t1_m4573r}"
+}
