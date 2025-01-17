@@ -1,0 +1,1 @@
+flag = b'winterhack{cr4ck1ng-d1p5-0n-3111p71c-curv35!!}'
