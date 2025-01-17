@@ -1,0 +1,18 @@
+secret_codes = [
+    b'Wint3rH4ckC7f!',
+    b'W173r#4ckC7f!',
+    b'winTerHackCtF!',
+    b'"Win"-ter-hack',
+    b'winterhackctf',
+    b'!WinterHackCTF!',
+    b'>>WinterHack<<',
+    b'WinterHackCTF',
+    b'winterhackc7f',
+    b'skibbidirizzler',
+    b'diddypartybest',
+    b'>rizzthisgyatt<',
+    b'getmogged!!bozo',
+    b'copemaldseethe',
+    b'payfanumtaxnow',
+    b'hawktuahhawktuah',
+]

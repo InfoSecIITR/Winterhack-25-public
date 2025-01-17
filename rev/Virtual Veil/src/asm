@@ -1,0 +1,407 @@
+; Load input length from memory[0] into r1
+mmovf r1, 0
+
+; Check if length == 56
+cmpi r1, #56
+jnz fail
+
+; i=0
+mmovf r2, 16
+movi r3, #0xca
+xor r2, r3
+cmpi r2, #0xbd
+jnz fail
+
+; i=1
+mmovf r2, 17
+movi r3, #0xfe
+xor r2, r3
+cmpi r2, #0x97
+jnz fail
+
+; i=2
+mmovf r2, 18
+movi r3, #0xba
+xor r2, r3
+cmpi r2, #0xd4
+jnz fail
+
+; i=3
+mmovf r2, 19
+movi r3, #0xbe
+xor r2, r3
+cmpi r2, #0xca
+jnz fail
+
+; i=4
+mmovf r2, 20
+movi r3, #0xde
+xor r2, r3
+cmpi r2, #0xbb
+jnz fail
+
+; i=5
+mmovf r2, 21
+movi r3, #0xad
+xor r2, r3
+cmpi r2, #0xdf
+jnz fail
+
+; i=6
+mmovf r2, 22
+movi r3, #0xbe
+xor r2, r3
+cmpi r2, #0xd6
+jnz fail
+
+; i=7
+mmovf r2, 23
+movi r3, #0xef
+xor r2, r3
+cmpi r2, #0x8e
+jnz fail
+
+; i=8
+mmovf r2, 24
+movi r3, #0xc0
+xor r2, r3
+cmpi r2, #0xa3
+jnz fail
+
+; i=9
+mmovf r2, 25
+movi r3, #0xff
+xor r2, r3
+cmpi r2, #0x94
+jnz fail
+
+; i=10
+mmovf r2, 26
+movi r3, #0xee
+xor r2, r3
+cmpi r2, #0x95
+jnz fail
+
+; i=11
+mmovf r2, 27
+movi r3, #0xc0
+xor r2, r3
+cmpi r2, #0xb7
+jnz fail
+
+; i=12
+mmovf r2, 28
+movi r3, #0xde
+xor r2, r3
+cmpi r2, #0xee
+jnz fail
+
+; i=13
+mmovf r2, 29
+movi r3, #0xf0
+xor r2, r3
+cmpi r2, #0x87
+jnz fail
+
+; i=14
+mmovf r2, 30
+movi r3, #0x0d
+xor r2, r3
+cmpi r2, #0x52
+jnz fail
+
+; i=15
+mmovf r2, 31
+movi r3, #0xca
+xor r2, r3
+cmpi r2, #0xbf
+jnz fail
+
+; i=16
+mmovf r2, 32
+movi r3, #0xfe
+xor r2, r3
+cmpi r2, #0xa1
+jnz fail
+
+; i=17
+mmovf r2, 33
+movi r3, #0xba
+xor r2, r3
+cmpi r2, #0xe8
+jnz fail
+
+; i=18
+mmovf r2, 34
+movi r3, #0xbe
+xor r2, r3
+cmpi r2, #0xe1
+jnz fail
+
+; i=19
+mmovf r2, 35
+movi r3, #0xde
+xor r2, r3
+cmpi r2, #0xac
+jnz fail
+
+; i=20
+mmovf r2, 36
+movi r3, #0xad
+xor r2, r3
+cmpi r2, #0xc8
+jnz fail
+
+; i=21
+mmovf r2, 37
+movi r3, #0xbe
+xor r2, r3
+cmpi r2, #0x8a
+jnz fail
+
+; i=22
+mmovf r2, 38
+movi r3, #0xef
+xor r2, r3
+cmpi r2, #0x83
+jnz fail
+
+; i=23
+mmovf r2, 39
+movi r3, #0xc0
+xor r2, r3
+cmpi r2, #0xf1
+jnz fail
+
+; i=24
+mmovf r2, 40
+movi r3, #0xff
+xor r2, r3
+cmpi r2, #0x86
+jnz fail
+
+; i=25
+mmovf r2, 41
+movi r3, #0xee
+xor r2, r3
+cmpi r2, #0xb1
+jnz fail
+
+; i=26
+mmovf r2, 42
+movi r3, #0xc0
+xor r2, r3
+cmpi r2, #0xa7
+jnz fail
+
+; i=27
+mmovf r2, 43
+movi r3, #0xde
+xor r2, r3
+cmpi r2, #0xee
+jnz fail
+
+; i=28
+mmovf r2, 44
+movi r3, #0xf0
+xor r2, r3
+cmpi r2, #0xc0
+jnz fail
+
+; i=29
+mmovf r2, 45
+movi r3, #0x0d
+xor r2, r3
+cmpi r2, #0x69
+jnz fail
+
+; i=30
+mmovf r2, 46
+movi r3, #0xca
+xor r2, r3
+cmpi r2, #0x95
+jnz fail
+
+; i=31
+mmovf r2, 47
+movi r3, #0xfe
+xor r2, r3
+cmpi r2, #0x9f
+jnz fail
+
+; i=32
+mmovf r2, 48
+movi r3, #0xba
+xor r2, r3
+cmpi r2, #0x8d
+jnz fail
+
+; i=33
+mmovf r2, 49
+movi r3, #0xbe
+xor r2, r3
+cmpi r2, #0xe1
+jnz fail
+
+; i=34
+mmovf r2, 50
+movi r3, #0xde
+xor r2, r3
+cmpi r2, #0xaa
+jnz fail
+
+; i=35
+mmovf r2, 51
+movi r3, #0xad
+xor r2, r3
+cmpi r2, #0xc5
+jnz fail
+
+; i=36
+mmovf r2, 52
+movi r3, #0xbe
+xor r2, r3
+cmpi r2, #0x9f
+jnz fail
+
+; i=37
+mmovf r2, 53
+movi r3, #0xef
+xor r2, r3
+cmpi r2, #0x9c
+jnz fail
+
+; i=38
+mmovf r2, 54
+movi r3, #0xc0
+xor r2, r3
+cmpi r2, #0x9f
+jnz fail
+
+; i=39
+mmovf r2, 55
+movi r3, #0xff
+xor r2, r3
+cmpi r2, #0xb6
+jnz fail
+
+; i=40
+mmovf r2, 56
+movi r3, #0xee
+xor r2, r3
+cmpi r2, #0x83
+jnz fail
+
+; i=41
+mmovf r2, 57
+movi r3, #0xc0
+xor r2, r3
+cmpi r2, #0xad
+jnz fail
+
+; i=42
+mmovf r2, 58
+movi r3, #0xde
+xor r2, r3
+cmpi r2, #0xea
+jnz fail
+
+; i=43
+mmovf r2, 59
+movi r3, #0xf0
+xor r2, r3
+cmpi r2, #0xaf
+jnz fail
+
+; i=44
+mmovf r2, 60
+movi r3, #0x0d
+xor r2, r3
+cmpi r2, #0x78
+jnz fail
+
+; i=45
+mmovf r2, 61
+movi r3, #0xca
+xor r2, r3
+cmpi r2, #0xba
+jnz fail
+
+; i=46
+mmovf r2, 62
+movi r3, #0xfe
+xor r2, r3
+cmpi r2, #0xa1
+jnz fail
+
+; i=47
+mmovf r2, 63
+movi r3, #0xba
+xor r2, r3
+cmpi r2, #0xd7
+jnz fail
+
+; i=48
+mmovf r2, 64
+movi r3, #0xbe
+xor r2, r3
+cmpi r2, #0xc7
+jnz fail
+
+; i=49
+mmovf r2, 65
+movi r3, #0xde
+xor r2, r3
+cmpi r2, #0x81
+jnz fail
+
+; i=50
+mmovf r2, 66
+movi r3, #0xad
+xor r2, r3
+cmpi r2, #0xca
+jnz fail
+
+; i=51
+mmovf r2, 67
+movi r3, #0xbe
+xor r2, r3
+cmpi r2, #0x8a
+jnz fail
+
+; i=52
+mmovf r2, 68
+movi r3, #0xef
+xor r2, r3
+cmpi r2, #0x82
+jnz fail
+
+; i=53
+mmovf r2, 69
+movi r3, #0xc0
+xor r2, r3
+cmpi r2, #0xa5
+jnz fail
+
+; i=54
+mmovf r2, 70
+movi r3, #0xff
+xor r2, r3
+cmpi r2, #0xde
+jnz fail
+
+; i=55
+mmovf r2, 71
+movi r3, #0xee
+xor r2, r3
+cmpi r2, #0x93
+jnz fail
+
+; If we reached here, everything matched; set r0=1 and halt
+.label success
+movi r0, #1
+halt
+
+.label fail
+movi r0, #0
+halt
